@@ -28,7 +28,7 @@ Shared presentation is in styles.css. Minimal form behavior is in script.js. The
 - Privacy Policy and Terms contain tailored drafts. Set the effective date, add a business address once you have one (see CAN-SPAM note below), then remove the draft banners before launch.
 - Verify the supplied service terms and Stripe customer portal availability before launch.
 
-Each page also lists its placeholders in the footer. All supplied marketing copy is retained. No pricing, testimonials, client logos, or performance statistics have been added.
+All supplied marketing copy is retained. No pricing, testimonials, client logos, or performance statistics have been added.
 
 ## Checks
 

@@ -1,4 +1,5 @@
-"""Check routes, document structure, labels, and launch placeholders."""
+"""Check routes, document structure, labels, and no leftover placeholder text."""
+import re
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -54,7 +55,8 @@ for file in ROOT.glob('*.html'):
     assert doc.h1 == 1 and doc.main == 1, file.name
     assert all(control and control in doc.labels for control in doc.controls), file.name
     assert chr(8211) not in source and chr(8212) not in source, file.name
-    assert '<summary>Placeholders to complete</summary>' in source, file.name
+    assert 'placeholder' not in source.lower(), file.name
+    assert not re.search(r'\[[A-Za-z][^\]]{12,}\]', re.sub(r'<script.*?</script>', '', source, flags=re.S)), file.name
     assert '<meta name="viewport"' in source, file.name
     docs[file.name] = doc
 
@@ -71,11 +73,11 @@ for name, doc in docs.items():
     assert 'lets-talk.html' in doc.links, name
     assert 'privacy.html' in doc.links and 'terms.html' in doc.links, name
 assert 'https://calendly.com/get-deknit/30min' in (ROOT / 'lets-talk.html').read_text(encoding='utf-8')
-assert 'Draft for review, not yet finalized.' in (ROOT / 'privacy.html').read_text(encoding='utf-8')
-assert 'Draft for review, not yet finalized.' in (ROOT / 'terms.html').read_text(encoding='utf-8')
+assert 'Effective date: October 26, 2026.' in (ROOT / 'privacy.html').read_text(encoding='utf-8')
+assert 'Effective date: October 26, 2026.' in (ROOT / 'terms.html').read_text(encoding='utf-8')
 assert len(docs['academy.html'].controls) == 6
 assert len(docs['lets-talk.html'].controls) == 5
-print('Passed: 8 pages, balanced HTML, unique IDs, working internal links and anchors, form labels, viewport metadata, and required placeholders.')
+print('Passed: 8 pages, balanced HTML, unique IDs, working internal links and anchors, form labels, viewport metadata, and no leftover placeholder text.')
 
 
 for page, endpoint in [('lets-talk.html', 'xgaaaygd'), ('academy.html', 'mbgggkrj')]:

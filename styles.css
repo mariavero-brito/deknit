@@ -168,3 +168,6 @@ nav a:not(.pill):hover,.footer-links a:hover,.legal-links a:hover,.text-link:hov
 .profile .founder p{max-width:520px}
 .profile .founder p+p{margin-top:12px}
 .founder-photo{display:block;width:100%;max-width:260px;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:20px;border:1px solid var(--line)}
+
+/* Effective date line on legal pages */
+.effective{color:var(--muted);font-size:14px;margin-bottom:28px}
