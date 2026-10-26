@@ -58,6 +58,8 @@ for file in ROOT.glob('*.html'):
     assert 'placeholder' not in source.lower(), file.name
     assert not re.search(r'\[[A-Za-z][^\]]{12,}\]', re.sub(r'<script.*?</script>', '', source, flags=re.S)), file.name
     assert '<meta name="viewport"' in source, file.name
+    assert 'rel="icon"' in source and 'rel="apple-touch-icon"' in source, file.name
+    assert all((ROOT / icon).is_file() for icon in ('favicon.ico', 'favicon-32.png', 'apple-touch-icon.png')), file.name
     docs[file.name] = doc
 
 assert len(docs) == 8
