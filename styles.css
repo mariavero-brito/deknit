@@ -153,3 +153,7 @@ nav a:not(.pill):hover,.footer-links a:hover,.legal-links a:hover,.text-link:hov
 
 /* Keep each short sentence of a headline together so lines break between sentences */
 .nb{display:inline-block}
+
+/* Small print under an offer */
+.fineprint{font-size:12px;line-height:1.5;color:var(--muted);margin-top:16px}
+.oc-body p.fineprint,p.fineprint{font-size:12px;line-height:1.5;color:#7a8596;margin-top:18px}
