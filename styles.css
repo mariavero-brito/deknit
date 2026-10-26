@@ -13,3 +13,6 @@
 @media(max-width:620px){.page-hero{padding-block:40px}.page-hero h1{font-size:43px}.content-section{padding-block:32px}.split,.profile,.form-row{grid-template-columns:1fr}.area-grid{grid-template-columns:1fr}.four-grid{grid-template-columns:1fr 1fr;gap:16px}.form-section{padding:24px}.journey{padding:20px;gap:12px}.journey span+span:before{margin-right:12px}}
 
 .booking-panel{padding:38px;text-align:center}.booking-panel p{margin-block:15px}.booking-panel .pill{margin-block:10px}.legal-copy h2{font-size:25px;margin-top:32px}.legal-copy p{margin-block:14px}.draft-note{border-left:3px solid #b58a47;padding:16px 20px;background:#eee7d8;margin-bottom:28px}
+
+/* Consistent paired offer cards. */
+.offers .offer{grid-template-columns:58px minmax(0,1fr);align-items:start}.offers .badge{width:58px;height:58px;flex-shrink:0}.offers .badge svg{width:28px;height:28px;stroke-width:1.4}.offers .offer>div{height:100%;display:flex;flex-direction:column}.offers .offer h3{font-size:20px;line-height:1.4;font-weight:450}.offers .offer p{flex:1}.offers .text-link{margin-top:20px}.hero-art{height:auto}@media(max-width:620px){.offers .offer{grid-template-columns:48px minmax(0,1fr)}.offers .badge{width:48px;height:48px}.offers .offer h3{font-size:18px}}
