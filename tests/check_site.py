@@ -58,7 +58,7 @@ for file in ROOT.glob('*.html'):
     assert '<meta name="viewport"' in source, file.name
     docs[file.name] = doc
 
-assert len(docs) == 7
+assert len(docs) == 8
 for name, doc in docs.items():
     for href in doc.links:
         url = urlsplit(href)
@@ -75,7 +75,7 @@ assert 'Draft for review, not yet finalized.' in (ROOT / 'privacy.html').read_te
 assert 'Draft for review, not yet finalized.' in (ROOT / 'terms.html').read_text(encoding='utf-8')
 assert len(docs['academy.html'].controls) == 6
 assert len(docs['lets-talk.html'].controls) == 5
-print('Passed: 7 pages, balanced HTML, unique IDs, working internal links and anchors, form labels, viewport metadata, and required placeholders.')
+print('Passed: 8 pages, balanced HTML, unique IDs, working internal links and anchors, form labels, viewport metadata, and required placeholders.')
 
 
 for page, endpoint in [('lets-talk.html', 'xgaaaygd'), ('academy.html', 'mbgggkrj')]:
