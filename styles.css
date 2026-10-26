@@ -185,15 +185,14 @@ nav a:not(.pill):hover,.footer-links a:hover,.legal-links a:hover,.text-link:hov
   .fineprint,.oc-body p.fineprint,p.fineprint{font-size:13px}
 }
 
-/* Home: tangle-to-line artwork sits softly behind the hero, never through the words */
+/* Home: tangle-to-line artwork sits softly behind the hero letters */
 .hero{position:relative;isolation:isolate}
-.hero-art{position:absolute;inset:0;z-index:-2;overflow:hidden;display:flex;align-items:center;pointer-events:none;opacity:.55;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%);mask-image:linear-gradient(90deg,transparent,#000 10%)}
+.hero-art{position:absolute;inset:0;z-index:-2;overflow:hidden;display:flex;align-items:center;pointer-events:none;opacity:.5;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%);mask-image:linear-gradient(90deg,transparent,#000 10%)}
 .hero-art img{display:block;flex:none;position:relative;left:50%;transform:translateX(-50%);width:max(100%,1200px);height:auto}
 .hero-copy{position:relative}
-.hero-copy:before{content:"";position:absolute;z-index:-1;inset:-28px -70px;background:radial-gradient(closest-side,rgba(247,249,252,.96) 55%,rgba(247,249,252,0));pointer-events:none}
+.hero-copy:before{content:"";position:absolute;z-index:-1;inset:-20px -50px;background:radial-gradient(closest-side,rgba(247,249,252,.8) 50%,rgba(247,249,252,0));pointer-events:none}
 @media (max-width:800px){
-  .hero{padding-bottom:150px}
-  .hero-art{align-items:flex-end;opacity:.6}
+  .hero-art{opacity:.38}
   .hero-art img{width:max(100%,1000px)}
-  .hero-copy:before{display:none}
+  .hero-copy:before{inset:-10px -16px;background:radial-gradient(closest-side,rgba(247,249,252,.78) 60%,rgba(247,249,252,0))}
 }
