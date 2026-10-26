@@ -1,11 +1,11 @@
 # deknit
 
-Seven-page responsive static marketing site using design 2, Regular, airy.
+Eight-page responsive static marketing site using design 2, Regular, airy.
 
 ## Preview
 
 Run `python -m http.server 8000` in this directory and open http://localhost:8000.
-No build step or dependencies are required. Deploy the repository root on any static host. Fonts load from Google Fonts with local fallbacks.
+No build step or dependencies are required. Deploy the repository root on any static host. Production hosting is Netlify (see netlify.toml): publish directory is the repository root and there is no build command. Fonts load from Google Fonts with local fallbacks.
 
 ## Pages
 
@@ -16,6 +16,7 @@ No build step or dependencies are required. Deploy the repository root on any st
 - Let's talk: lets-talk.html
 - Privacy Policy: privacy.html
 - Terms: terms.html
+- FAQ: faq.html (linked from Services, not in the main navigation)
 
 Shared presentation is in styles.css. Minimal form behavior is in script.js. The ribbon illustration is an accessible inline SVG in index.html.
 
@@ -24,8 +25,7 @@ Shared presentation is in styles.css. Minimal form behavior is in script.js. The
 - Calendly is connected at https://calendly.com/get-deknit/30min. Review availability before launch.
 - Forms are connected to Formspree as documented below. Live submission and email delivery have not been tested; do not send test submissions without the owner's explicit authorization.
 - Set Academy chat hours and packages.
-- Add founder photo and approved display name.
-- Privacy Policy and Terms contain tailored drafts. Complete bracketed business details and operating policies and obtain legal review before adoption.
+- Privacy Policy and Terms contain tailored drafts. Fill in the virtual mailbox address and effective date, then remove the draft banners before launch.
 - Verify the supplied service terms and Stripe customer portal availability before launch.
 
 Each page also lists its placeholders in the footer. All supplied marketing copy is retained. No pricing, testimonials, client logos, or performance statistics have been added.
