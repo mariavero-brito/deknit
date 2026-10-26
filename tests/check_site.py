@@ -64,9 +64,9 @@ for name, doc in docs.items():
             assert url.fragment in docs[destination].ids, f'{name}: missing #{url.fragment}'
     assert 'lets-talk.html' in doc.links, name
     assert 'privacy.html' in doc.links and 'terms.html' in doc.links, name
-assert '[Calendly booking embed placeholder]' in (ROOT / 'lets-talk.html').read_text(encoding='utf-8')
-assert '[Policy text to be added]' in (ROOT / 'privacy.html').read_text(encoding='utf-8')
-assert '[Policy text to be added]' in (ROOT / 'terms.html').read_text(encoding='utf-8')
+assert 'https://calendly.com/get-deknit/30min' in (ROOT / 'lets-talk.html').read_text(encoding='utf-8')
+assert 'Draft for review, not yet finalized.' in (ROOT / 'privacy.html').read_text(encoding='utf-8')
+assert 'Draft for review, not yet finalized.' in (ROOT / 'terms.html').read_text(encoding='utf-8')
 assert len(docs['academy.html'].controls) == 5
 assert len(docs['lets-talk.html'].controls) == 4
 print('Passed: 7 pages, balanced HTML, unique IDs, working internal links and anchors, form labels, viewport metadata, and required placeholders.')

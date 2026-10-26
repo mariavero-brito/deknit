@@ -21,11 +21,11 @@ Shared presentation is in styles.css. Minimal form behavior is in script.js. The
 
 ## Before launch
 
-- Replace the Calendly placeholder with the real booking URL or embed.
-- Connect forms to a submission service. They currently open a mailto draft, validate required fields, and never claim a submission has been saved. Visitors must send the draft themselves.
+- Calendly is connected at https://calendly.com/get-deknit/30min. Review availability before launch.
+- Connect forms to a submission service. They currently open a mailto draft to get.deknit@gmail.com, validate required fields, and never claim a submission has been saved. Visitors must send the draft themselves.
 - Set Academy chat hours and packages.
 - Add founder photo and approved display name.
-- Replace both legal policy placeholders with reviewed text.
+- Privacy Policy and Terms contain tailored drafts. Complete bracketed business details and operating policies and obtain legal review before adoption.
 - Verify the supplied service terms and Stripe customer portal availability before launch.
 
 Each page also lists its placeholders in the footer. All supplied marketing copy is retained. No pricing, testimonials, client logos, or performance statistics have been added.
