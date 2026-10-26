@@ -171,3 +171,16 @@ nav a:not(.pill):hover,.footer-links a:hover,.legal-links a:hover,.text-link:hov
 
 /* Effective date line on legal pages */
 .effective{color:var(--muted);font-size:14px;margin-bottom:28px}
+
+/* Mobile: larger tap areas (without changing the look) and slightly larger small text */
+@media (max-width:800px){
+  .logo,header nav a:not(.pill),.footer-links a,.legal-links a{display:inline-block;padding-block:11px;margin-block:-11px}
+  .actions .pill,.pill{font-size:14px}
+  header nav a:not(.pill){font-size:14px}
+  nav .pill{font-size:14px;min-height:44px}
+  .contact{padding-block:11px;margin-top:1px}
+  .text-link{padding-block:9px;margin-top:8px}
+  .faq summary{padding-block:7px}
+  .footer-bottom,.footer-bottom span{font-size:13px}
+  .fineprint,.oc-body p.fineprint,p.fineprint{font-size:13px}
+}
