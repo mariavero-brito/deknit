@@ -92,7 +92,7 @@ for page, endpoint in [('lets-talk.html', 'xgaaaygd'), ('academy.html', 'mbgggkr
     assert '_gotcha' in doc.fields
     source = (ROOT / page).read_text()
     assert 'Email draft only' not in source and 'data-email-form' not in source
-    assert ('mailto:hello@deknit.com' in source) == (page == 'lets-talk.html'), page
+    assert source.count('mailto:hello@deknit.com') == (1 if page == 'lets-talk.html' else 0), page
 assert 'required' in docs['lets-talk.html'].fields['message']
 assert 'required' not in docs['academy.html'].fields['message']
 team = docs['academy.html'].fields['team_size']
