@@ -25,7 +25,7 @@ Shared presentation is in styles.css. Minimal form behavior is in script.js. The
 - Calendly is connected at https://calendly.com/get-deknit/30min. Review availability before launch.
 - Forms are connected to Formspree as documented below. Live submission and email delivery have not been tested; do not send test submissions without the owner's explicit authorization.
 - Set Academy chat hours and packages.
-- Privacy Policy and Terms contain tailored drafts. Fill in the virtual mailbox address and effective date, then remove the draft banners before launch.
+- Privacy Policy and Terms contain tailored drafts. Set the effective date, add a business address once you have one (see CAN-SPAM note below), then remove the draft banners before launch.
 - Verify the supplied service terms and Stripe customer portal availability before launch.
 
 Each page also lists its placeholders in the footer. All supplied marketing copy is retained. No pricing, testimonials, client logos, or performance statistics have been added.
@@ -55,3 +55,8 @@ JavaScript sends FormData with Accept: application/json, waits for an HTTP succe
 Free-plan limits: 50 submissions per month shared across the account, unlimited forms/projects, 30 days of submission history, and up to two linked email addresses. File uploads, autoresponse emails, custom hosted thank-you redirects, and submission API access are not enabled. Monitor Usage in Formspree; no automatic upgrade has been authorized. See https://formspree.io/plans and https://help.formspree.io/articles/account-management/account-limits/.
 
 No live submissions were sent. After deployment, an owner-authorized test should check both acceptance and inbox/spam delivery. Privacy and Terms remain drafts with unrelated business details still to complete.
+
+
+## Business address
+
+Privacy and Terms currently list no street address. Commercial email (for example Academy waitlist updates) generally needs a valid postal address in the footer under CAN-SPAM, so add a mailbox address before sending marketing email.
