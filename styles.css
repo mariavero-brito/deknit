@@ -89,3 +89,6 @@ details[open]>summary .oc-toggle,.faq details[open]>summary:after{background:lin
 .four-grid p{font-size:15px}
 @media(max-width:800px){.oc-cols{grid-template-columns:1fr;gap:30px}}
 @media(max-width:620px){.offer-card>summary,.offer-link{padding:22px 20px;gap:16px}.oc-title{font-size:23px}.oc-label{display:none}.oc-body{padding:24px 20px;gap:26px}.oc-body .area-grid{grid-template-columns:1fr}.four-grid{grid-template-columns:1fr}}
+
+/* Lockup dot: slightly larger so it reads at body and heading sizes, same center */
+.wm .logo-i:after{width:.18em;height:.18em;top:.16em;left:.065em;box-shadow:0 0 0 .045em var(--paper)}
